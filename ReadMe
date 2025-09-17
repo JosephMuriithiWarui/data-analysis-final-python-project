@@ -9,7 +9,7 @@ It includes **data cleaning, analysis, visualization**, and an **interactive Str
 ## 📂 Project Structure
 project/
 ├── metadata/
-│ └── metadata.csv # Dataset file
+│ └── metadata.csv # download from (https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge?select=metadata.csv)
 ├── cord19_analysis.ipynb # Jupyter Notebook / Python script for exploration
 └── app.py # Streamlit interactive app
 
@@ -55,6 +55,7 @@ pip install pandas matplotlib streamlit wordcloud
 python cord19_analysis.py
 
 2. Run Streamlit App
+
 =======
 # 📊 CORD-19 Data Explorer
 
