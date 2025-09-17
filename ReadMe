@@ -1,0 +1,57 @@
+# 📊 CORD-19 Data Explorer
+
+This project explores the **CORD-19 COVID-19 research dataset**, focusing on paper metadata.  
+It includes **data cleaning, analysis, visualization**, and an **interactive Streamlit app**.
+
+---
+
+## 📂 Project Structure
+project/
+├── metadata/
+│ └── metadata.csv # Dataset file
+├── cord19_analysis.ipynb # Jupyter Notebook / Python script for exploration
+└── app.py # Streamlit interactive app
+
+
+---
+
+## 📝 Features
+
+1. **Data Exploration**
+   - Loads `metadata.csv`
+   - Checks dimensions, column types, missing values
+   - Generates basic statistics
+
+2. **Data Cleaning**
+   - Handles missing values in `title` and `publish_time`
+   - Converts `publish_time` to datetime
+   - Extracts publication year
+   - Computes abstract word count
+
+3. **Analysis & Visualization**
+   - Number of publications by year
+   - Top 10 journals publishing COVID-19 research
+   - Frequent words in paper titles
+   - Word cloud of paper titles
+
+4. **Streamlit App**
+   - Interactive year filter
+   - Bar charts for publications and top journals
+   - Word cloud visualization
+   - Displays a sample of filtered data
+
+---
+
+## ⚙️ Installation
+
+1. Clone or download the project.
+2. Install required Python packages:
+```bash
+pip install pandas matplotlib streamlit wordcloud
+
+
+1. Run Data Analysis Notebook/Script
+python cord19_analysis.py
+
+2. Run Streamlit App
+streamlit run app.py
