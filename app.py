@@ -1,4 +1,4 @@
-
+# app.py
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -7,7 +7,7 @@ from wordcloud import WordCloud
 # Load dataset
 @st.cache_data
 def load_data():
-    df = pd.read_csv("metadata/metadata.csv")
+    df = pd.read_csv("metadata.csv")
     df["publish_time"] = pd.to_datetime(df["publish_time"], errors="coerce")
     df["year"] = df["publish_time"].dt.year
     df = df.dropna(subset=["title", "publish_time"])

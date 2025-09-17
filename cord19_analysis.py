@@ -7,7 +7,7 @@ import re
 from collections import Counter
 
 # Load dataset
-df = pd.read_csv("metadata/metadata.csv")
+df = pd.read_csv("metadata.csv")
 
 # Basic exploration
 print("First 5 rows:")
