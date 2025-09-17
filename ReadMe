@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📊 CORD-19 Data Explorer
 
 This project explores the **CORD-19 COVID-19 research dataset**, focusing on paper metadata.  
@@ -113,5 +113,5 @@ pip install pandas matplotlib streamlit wordcloud
 python cord19_analysis.py
 
 2. Run Streamlit App
->>>>>>> ea18294 (added the files)
 streamlit run app.py
+
